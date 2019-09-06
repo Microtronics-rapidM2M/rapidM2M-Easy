@@ -150,26 +150,26 @@ Provides generic functions and constants for alarm implementation. <br/>
 
 Click on the name of the function to view in which example it is used.
 
-### [Timer, date & time](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Time.htm)
+### [Timer, date & time](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Time.htm)
 
 <details>
-<summary>**rM2M_GetTime(&hour=0, &minute=0, &second=0, timestamp=0)**</summary>
+<summary>rM2M_GetTime(&hour=0, &minute=0, &second=0, timestamp=0)</summary>
 + 50_filetransfer_send.p <br/>
 + 50_filetransfer_send_multiple.p <br/>
 </details>
 
 <details>
-<summary>**rM2M_GetDate(&year=0, &month=0, &day=0, timestamp=0)**</summary>
+<summary>rM2M_GetDate(&year=0, &month=0, &day=0, timestamp=0)</summary>
 + 50_filetransfer_send.p  <br/>
 </details>
 
 <details>
-<summary>**rM2M_GetDateTime(datetime[TrM2M_DateTime])**</summary>
+<summary>rM2M_GetDateTime(datetime[TrM2M_DateTime])</summary>
 + 00_common_7_conditional.p <br/>
 </details>
 
 <details>
-<summary>**rM2M_TimerAdd(funcidx)**</summary>
+<summary>rM2M_TimerAdd(funcidx)</summary>
 + 00_common_1_Timer_1.p<br/> 
 + 11_Led_2.p<br/>  
 + 11_Led_2_3.p<br/>  
@@ -182,16 +182,14 @@ Click on the name of the function to view in which example it is used.
 + 13_Transmission_Status_Led_1.p<br/> 
 + 13_Transmission_Status_Led_2.p<br/> 
 + 20_rs232_1.p<br/>  
++ 30_System_Values_0.p <br/>
++ 30_System_Values_1.p <br/>
++ 30_System_Values_2.p <br/>
++ 30_System_Values_3.p <br/>
 + 30_ui_0<br/>  
 + 30_ui_1.p<br/>  
 + 30_ui_2.p<br/>
 + 30_ui_3.p<br/>
-+ 31_i2c_sht21_0.p<br/>
-+ 31_i2c_sht21_1.p<br/>
-+ 31_i2c_sht21_2.p  <br/>
-+ 31_i2c_tmp112_0.p<br/>
-+ 31_i2c_tmp112_1.p<br/>
-+ 31_i2c_tmp112_2.p<br/>
 + 40_charging.p<br/>   
 + 60_statemachine_1.p<br/>  
 + 60_statemachine_2.p<br/>  
@@ -200,14 +198,13 @@ Click on the name of the function to view in which example it is used.
 + 61_alarm_3.p<br/>
 </details>
 
-
 <details>
-<summary>**rM2M_TimerRemove(funcidx)**</summary>
+<summary>rM2M_TimerRemove(funcidx)</summary>
 + 10_Switch_Long.p<br/>
 </details>
 
 <details>
-<summary>**rM2M_TimerAddExt(funcidx, bool:cyclic, time)**</summary>
+<summary>rM2M_TimerAddExt(funcidx, bool:cyclic, time)</summary>
 + 00_common_1_Timer_1.p<br/>
 + 00_common_1_Timer_2.p<br/>  
 + 10_Switch_Long.p<br/>
@@ -224,14 +221,14 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_TimerRemoveExt(funcidx)**</summary>
+<summary>rM2M_TimerRemoveExt(funcidx)</summary>
 + 10_Switch_Long.p<br/>
 </details>
 
-### [Uplink](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Uplink.htm)
+### [Uplink](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Uplink.htm)
 
 <details>
-<summary>**rM2M_TxStart(flags=0)**</summary>
+<summary>rM2M_TxStart(flags=0)</summary>
 + 12_Transmission_0.p<br/>
 + 12_Transmission_2_cyclic_connection.p<br/>
 + 12_Transmission_3_ForceOnline.p<br/>>
@@ -251,7 +248,7 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_TxSetMode(mode, flags=0)**</summary>
+<summary>rM2M_TxSetMode(mode, flags=0)</summary>
 + 12_Transmission_3_ForceOnline.p<br/>
 + 13_Transmission_Status_Led_0.p<br/>
 + 13_Transmission_Status_Led_1.p<br/>
@@ -266,7 +263,7 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_TxGetStatus(&errorcode=0)**</summary>
+<summary>rM2M_TxGetStatus(&errorcode=0)</summary>
 + 12_Transmission_3_ForceOnline.p<br/> 
 + 13_Transmission_Status_Led_0.p<br/>
 + 13_Transmission_Status_Led_1.p<br/>
@@ -274,7 +271,7 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_RecData(timestamp, const data{}, len)**</summary>
+<summary>rM2M_RecData(timestamp, const data{}, len)</summary>
 + 30_System_Values_1.p<br/>
 + 30_System_Values_2.p<br/>
 + 30_System_Values_3.p<br/>
@@ -288,7 +285,7 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_CfgRead(cfg, pos, data{}, size)**</summary>
+<summary>rM2M_CfgRead(cfg, pos, data{}, size)</summary>
 + 30_System_Values_2.p<br/>
 + 30_System_Values_3.p<br/>
 + 30_ui_2.p<br/>
@@ -296,29 +293,90 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**rM2M_CfgOnChg(funcidx)**</summary>
+<summary>rM2M_CfgOnChg(funcidx)</summary>
 + 30_System_Values_2.p<br/>
 + 30_System_Values_3.p<br/>
 + 30_ui_2.p<br/>
 + 30_ui_3.p<br/>
 </details>
 
-### [Encoding](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Encoding.htm)
+### [System](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/myDatalogEASY_V3_System.htm)
 
 <details>
-<summary>**rM2M_SetPackedB(data{}, pos, const block[], size)**</summary>
+<summary>RS232_Init(rs232, baudrate, mode, funcidx)</summary>
++ 20_rs232_1.p <br/>
++ 20_rs232_2.p<br/>
++ 20_rs232_3.p <br/>
++ 20_rs232_4.p<br/>
++ 50_filetransfer_receive.p <br/>
++ 50_filetransfer_send.p<br/>
+</details>
+
+<details>
+<summary>RS232_Write(rs232, const data{}, len)</summary>
++ 20_rs232_1.p <br/>
++ 20_rs232_2.p<br/>
++ 20_rs232_3.p <br/>
++ 20_rs232_4.p<br/>
++ 50_filetransfer_receive.p <br/>
+</details>
+
+<details>
+<summary>Vsens_On(mode)</summary>
++ 11_Led_2_3.p <br/>
+</details>
+
+<details>
+<summary>Vsens_Off()</summary>
++ 11_Led_2_3.p <br/>
+</details>
+
+<details>
+<summary>Ext3V3_On()</summary>
++ 11_Led_2.p <br/>
++ 11_Led_2_3.p <br/>
++ 11_Status_Led_and_Input_0.p<br/>
++ 11_Status_Led_and_Input_1.p<br/>
+</details>
+
+<details>
+<summary>Vsens_Off()</summary>
++ 11_Led_2.p <br/>
++ 11_Led_2_3.p <br/>
+</details>
+
+<details>
+<summary>Vsens_Off()</summary>
++ 10_Switch.p <br/>
++ 10_Switch_Long.p <br/>
++ 11_Status_Led_and_Button_0.p <br/>
++ 11_Status_Led_and_Button_1.p <br/>
+</details>
+
+<details>
+<summary>EasyV3_GetSysValues(values[TEasyV3_SysValue], len=sizeof values)</summary>
++ 30_System_Values_0.p<br/>
++ 30_System_Values_1.p<br/>
++ 30_System_Values_2.p<br/>
++ 30_System_Values_3.p<br/>
+</details>
+
+### [Encoding](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_Encoding.htm)
+
+<details>
+<summary>rM2M_SetPackedB(data{}, pos, const block[], size)</summary>
 + 50_filetransfer_receive.p <br/>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
 <details>
-<summary>**rM2M_GetPackedB(const data{}, pos, block[], size)**</summary>
+<summary>rM2M_GetPackedB(const data{}, pos, block[], size)</summary>
 + 50_filetransfer_receive.p <br/>
 </details>
 
 <details>
-<summary>**rM2M_Pack(const data{}, pos, &{Float,Fixed,_}:value, type)**</summary>
+<summary>rM2M_Pack(const data{}, pos, &{Float,Fixed,_}:value, type)</summary>
 + 00_common_4_pack.p <br/> 
 + 30_System_Values_1.p<br/>
 + 30_System_Values_2.p<br/>
@@ -333,15 +391,15 @@ Click on the name of the function to view in which example it is used.
 + Alarm.inc <br/>
 </details>
 
-### [Char & String](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_String_Funktionen.htm)
+### [Char & String](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_String_Funktionen.htm)
 
 <details>
-<summary>**strlen(const string[])**</summary>
+<summary>strlen(const string[])</summary>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
 <details>
-<summary>**sprintf(dest[], maxlength=sizeof dest, const format[], {Float,Fixed,_}:...)**</summary>
+<summary>sprintf(dest[], maxlength=sizeof dest, const format[], {Float,Fixed,_}:...)</summary>
 + 20_rs232_2.p<br/>
 + 20_rs232_3.p<br/>
 + 20_rs232_4.p<br/>
@@ -349,32 +407,34 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**strcmp(const string1[], const string2[], length=cellmax)**</summary>
+<summary>strcmp(const string1[], const string2[], length=cellmax)</summary>
 + 20_rs232_3.p<br/>
 + 20_rs232_4.p<br/>
 </details>
 
-### [Various](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_Hilfsfunktionen.htm)
+### [CRC & Hash] (https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_CRC_HASH.htm)
 
 <details>
-<summary>**getapilevel()**</summary>
-+ 00_common_2_get_module_info.p<br/>
-</details>
-
-<details>
-<summary>**CRC32(data{}, len, initial=0)**</summary>
+<summary>CRC32(data{}, len, initial=0)</summary>
 + 50_filetransfer_receive.p <br/>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
+### [Various](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_Hilfsfunktionen.htm)
+
 <details>
-<summary>**rM2M_GetId(id[TrM2M_Id], len=sizeof id)**</summary>
+<summary>getapilevel()</summary>
 + 00_common_2_get_module_info.p<br/>
 </details>
 
 <details>
-<summary>**funcidx(const name[])**</summary>
+<summary>rM2M_GetId(id[TrM2M_Id], len=sizeof id)</summary>
++ 00_common_2_get_module_info.p<br/>
+</details>
+
+<details>
+<summary>funcidx(const name[])</summary>
 + 00_common_1_Timer_1.p<br/>
 + 00_common_1_Timer_2.p<br/> 
 + 10_Switch.p<br/>
@@ -401,6 +461,7 @@ Click on the name of the function to view in which example it is used.
 + 30_System_Values_1.p<br/>
 + 30_System_Values_2.p<br/>
 + 30_System_Values_3.p<br/>
++ 30_ui_0.p<br/>
 + 30_ui_1.p<br/>
 + 30_ui_2.p<br/>
 + 30_ui_3.p<br/>
@@ -416,10 +477,10 @@ Click on the name of the function to view in which example it is used.
 + 61_alarm_3.p<br/>
 </details>
 
-### [Console](http://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_Consolen_Funktionen.htm)
+### [Console](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_Consolen_Funktionen.htm)
 
 <details>
-<summary>**print(const string[])**</summary>
+<summary>print(const string[])</summary>
 + 00_common_0_Main.p<br/>
 + 00_common_7_conditional.p<br/>
 + 00_common_8_loop.p<br/>
@@ -444,7 +505,7 @@ Click on the name of the function to view in which example it is used.
 </details>
 
 <details>
-<summary>**printf(const format[], {Float,Fixed,_}:...)**</summary>
+<summary>printf(const format[], {Float,Fixed,_}:...)</summary>
 + 00_common_1_Timer_1.p<br/>
 + 00_common_1_Timer_2.p<br/> 
 + 00_common_2_get_module_info.p<br/>
@@ -499,43 +560,175 @@ Click on the name of the function to view in which example it is used.
 ### [File Transfer](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_Erweiterungen_File_Transfer_Funktionen.htm)
 
 <details>
-<summary>**FT_Register(const name{}, id, funcidx)**</summary>
+<summary>FT_Register(const name{}, id, funcidx)</summary>
 + 50_filetransfer_receive.p <br/>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
 <details>
-<summary>**FT_Unregister(id)**</summary>
+<summary>FT_Unregister(id)</summary>
 + 50_filetransfer_send.p<br/>
 </details>
 
 <details>
-<summary>**FT_SetPropsExt(id, props[TFT_Info], len=sizeof props)**</summary>
+<summary>FT_SetPropsExt(id, props[TFT_Info], len=sizeof props)</summary>
 + 50_filetransfer_receive.p <br/>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
 <details>
-<summary>**FT_Read(id, const data{}, len)**</summary>
+<summary>FT_Read(id, const data{}, len)</summary>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
 </details>
 
 <details>
-<summary>**FT_Accept(id, newid=-1)**</summary>
+<summary>FT_Accept(id, newid=-1)</summary>
 + 50_filetransfer_receive.p <br/>
 </details>
 
 <details>
-<summary>**FT_Written(id, len)**</summary>
+<summary>FT_Written(id, len)</summary>
 + 50_filetransfer_receive.p <br/>
 </details>
 
 <details>
-<summary>**FT_Error(id)**</summary>
+<summary>FT_Error(id)</summary>
 + 50_filetransfer_receive.p <br/>
 + 50_filetransfer_send.p<br/>
 + 50_filetransfer_send_multiple.p<br/>
+</details>
+
+### [Universal Inputs](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/myDatalogEASY_V3_Universaleingangsmodul.htm)
+
+<details>
+<summary>FT_Error(id)</summary>
++ 11_Status_Led_and_Input_0.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 30_ui_0.p<br/>
++ 30_ui_1.p<br/>
++ 30_ui_2.p<br/>
++ 30_ui_3.p<br/>
+</details>
+
+<details>
+<summary>UI_GetValue(channel, &value=0)</summary>
++ 11_Status_Led_and_Input_0.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 30_ui_0.p<br/>
++ 30_ui_1.p<br/>
++ 30_ui_2.p<br/>
++ 30_ui_3.p<br/>
+</details>
+
+<details>
+<summary>UI_SetSampleRate(samplerate)</summary>
++ 30_ui_0.p<br/>
++ 30_ui_1.p<br/>
++ 30_ui_2.p<br/>
++ 30_ui_3.p<br/>
+</details>
+
+### [LED](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/myDatalogEASY_V3_LED.htm)
+
+<details>
+<summary>Led_Init(mode)</summary>
++ 11_Status_Led_1.p <br/>
++ 11_Status_Led_and_Button_0.p <br/>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_0.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 11_Status_Led_rgb_v1.p  <br/>
++ 11_Status_Led_rgb_v2.p <br/>
++ 13_Transmission_Status_Led_0.p<br/>
++ 13_Transmission_Status_Led_1.p<br/>
++ 13_Transmission_Status_Led_2.p<br/>
++ 20_rs232_3.p <br/>
++ 20_rs232_4.p <br/>
++ 40_charging.p <br/>
++ 60_statemachine_0.p <br/>
++ 60_statemachine_1.p <br/>
++ 60_statemachine_2.p <br/>
+</details>
+
+<details>
+<summary>Led_On(bool:red, bool:green)</summary>
++ 11_Status_Led_1.p <br/>
++ 11_Status_Led_and_Button_0.p <br/>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_0.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 11_Status_Led_rgb_v1.p  <br/>
++ 11_Status_Led_rgb_v2.p <br/>
++ 13_Transmission_Status_Led_0.p<br/>
++ 13_Transmission_Status_Led_1.p<br/>
++ 13_Transmission_Status_Led_2.p<br/>
++ 20_rs232_3.p <br/>
++ 20_rs232_4.p <br/>
++ 40_charging.p <br/>
++ 60_statemachine_0.p <br/>
++ 60_statemachine_1.p <br/>
++ 60_statemachine_2.p <br/>
+</details>
+
+<details>
+<summary>Led_Off(bool:red, bool:green)</summary>
++ 11_Status_Led_1.p <br/>
++ 11_Status_Led_and_Button_0.p <br/>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_0.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 11_Status_Led_rgb_v1.p  <br/>
++ 11_Status_Led_rgb_v2.p <br/>
++ 13_Transmission_Status_Led_0.p<br/>
++ 13_Transmission_Status_Led_1.p<br/>
++ 13_Transmission_Status_Led_2.p<br/>
++ 20_rs232_3.p <br/>
++ 20_rs232_4.p <br/>
++ 40_charging.p <br/>
++ 60_statemachine_0.p <br/>
++ 60_statemachine_1.p <br/>
++ 60_statemachine_2.p <br/>
+</details>
+
+<details>
+<summary>Led_Blink(red, green)</summary>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 13_Transmission_Status_Led_0.p<br/>
++ 13_Transmission_Status_Led_1.p<br/>
++ 13_Transmission_Status_Led_2.p<br/>
++ 40_charging.p <br/>
++ 60_statemachine_0.p <br/>
++ 60_statemachine_2.p <br/>
+</details>
+
+<details>
+<summary>Led_Flash(red, green)</summary>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 60_statemachine_0.p <br/>
+</details>
+
+<details>
+<summary>Led_Flicker(red, green)</summary>
++ 11_Status_Led_and_Button_1.p <br/>
++ 11_Status_Led_and_Input_1.p <br/>
++ 13_Transmission_Status_Led_0.p<br/>
++ 13_Transmission_Status_Led_1.p<br/>
++ 13_Transmission_Status_Led_2.p<br/>
+</details>
+
+### [Power Management](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/myDatalogEASY_V3_Power_Management.htm)
+
+<details>
+<summary>PM_SetChargingMode(mode)</summary>
++ 40_charging.p <br/>
+</details>
+
+<details>
+<summary>PM_GetInfo(info[TPM_Info], len=sizeof info)</summary>
++ 40_charging.p <br/>
 </details>
