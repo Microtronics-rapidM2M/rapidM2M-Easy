@@ -412,7 +412,7 @@ Click on the name of the function to view in which example it is used.
 + 20_rs232_4.p<br/>
 </details>
 
-### [CRC & Hash] (https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_CRC_HASH.htm)
+### [CRC & Hash](https://support.microtronics.com/Developer_Documentation/Content/Developer_Documentation/sw/Pawn_rM2M_CRC_HASH.htm)
 
 <details>
 <summary>CRC32(data{}, len, initial=0)</summary>
