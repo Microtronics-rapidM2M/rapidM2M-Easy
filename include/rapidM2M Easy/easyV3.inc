@@ -65,7 +65,6 @@ const
   RS485_NUM_ITF,
 };
 
-
 /**
  * <summary>
  *   RS232 configuration bits used with RS232_Init().
@@ -343,7 +342,8 @@ const
  * </summary>
  *
  * <param name="mode">
- *   Sensor supply mode (see Vsens modes).
+ *   EasyV3:  Sensor supply mode (see Vsens modes).
+ *   EasyIoT: Sensor voltgae (5000 .. 24000 [mV]).
  * </param>
  *
  * <returns>
